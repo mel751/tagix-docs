@@ -1,22 +1,32 @@
 import { define, signal } from "@effuse/core";
 import { Link } from "@effuse/router";
+import { navigateTo } from "@effuse/router";
 import { HEADER_CLASSES, ROUTES, ASSETS } from "./constants";
+import { closeMenu, toggleMenu, mobileMenuStore, MobileMenuState } from "../../store/mobileMenu";
 
 export const Header = define({
-  script: () => {
-    const isMenuOpen = signal(false);
+  script: ({ useCallback }) => {
+    const isMenuOpen = signal(MobileMenuState.$is("Open")(mobileMenuStore.stateValue));
 
-    const toggleMenu = () => {
-      isMenuOpen.value = !isMenuOpen.value;
-    };
+    mobileMenuStore.subscribe((state) => {
+      isMenuOpen.value = MobileMenuState.$is("Open")(state);
+    });
 
-    const closeMenu = () => {
-      isMenuOpen.value = false;
-    };
+    const handleDocsClick = useCallback((e: Event) => {
+      e.preventDefault();
+      closeMenu();
+      navigateTo(ROUTES.DOCS);
+    });
 
-    return { isMenuOpen, toggleMenu, closeMenu };
+    const handleGitHubClick = useCallback((e: Event) => {
+      e.preventDefault();
+      closeMenu();
+      window.open("https://github.com/chrismichaelps/tagix", "_blank", "noopener,noreferrer");
+    });
+
+    return { isMenuOpen, toggleMenu, handleDocsClick, handleGitHubClick };
   },
-  template: ({ isMenuOpen, toggleMenu, closeMenu }) => (
+  template: ({ isMenuOpen, toggleMenu, handleDocsClick, handleGitHubClick }) => (
     <>
       <header class={HEADER_CLASSES.HEADER}>
         <div class={HEADER_CLASSES.CONTENT}>
@@ -44,14 +54,15 @@ export const Header = define({
       </header>
 
       <nav class={`tagix-mobile-menu ${isMenuOpen.value ? "is-open" : ""}`}>
-        <Link to={ROUTES.DOCS} class="tagix-mobile-menu-link" onClick={closeMenu}>
+        <a href="/docs" class="tagix-mobile-menu-link" onClick={handleDocsClick}>
           Docs
-        </Link>
+        </a>
         <a
           href="https://github.com/chrismichaelps/tagix"
           target="_blank"
           rel="noopener"
           class="tagix-mobile-menu-link"
+          onClick={handleGitHubClick}
         >
           GitHub
         </a>
