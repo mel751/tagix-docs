@@ -25,9 +25,6 @@ importers:
       "@fontsource/geist-sans":
         specifier: ^5.2.5
         version: 5.2.5
-      "@types/marked":
-        specifier: ^6.0.0
-        version: 6.0.0
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1078,13 +1075,6 @@ packages:
         integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==,
       }
 
-  "@types/marked@6.0.0":
-    resolution:
-      {
-        integrity: sha512-jmjpa4BwUsmhxcfsgUit/7A9KbrC48Q0q8KvnY107ogcjGgTFDlIL3RpihNpx2Mu1hM4mdFQjoVc4O6JoGKHsA==,
-      }
-    deprecated: This is a stub types definition. marked provides its own type definitions, so you do not need this installed.
-
   "@types/node@25.2.1":
     resolution:
       {
@@ -1743,14 +1733,6 @@ packages:
       {
         integrity: sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ==,
       }
-
-  marked@17.0.1:
-    resolution:
-      {
-        integrity: sha512-boeBdiS0ghpWcSwoNm/jJBwdpFaMnZWRzjA6SkUMYb40SVaN1x7mmfGKp0jvexGcx+7y2La5zRZsYFZI6Qpypg==,
-      }
-    engines: { node: ">= 20" }
-    hasBin: true
 
   minimatch@3.1.2:
     resolution:
@@ -2592,10 +2574,6 @@ snapshots:
 
   "@types/json-schema@7.0.15": {}
 
-  "@types/marked@6.0.0":
-    dependencies:
-      marked: 17.0.1
-
   "@types/node@25.2.1":
     dependencies:
       undici-types: 7.16.0
@@ -2952,8 +2930,6 @@ snapshots:
   magic-string@0.30.21:
     dependencies:
       "@jridgewell/sourcemap-codec": 1.5.5
-
-  marked@17.0.1: {}
 
   minimatch@3.1.2:
     dependencies:
