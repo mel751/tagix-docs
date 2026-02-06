@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Tagix Documentation</title>
+    <link>https://tagix-docs.vercel.app</link>
+    <description>Latest updates from Tagix documentation</description>
+    <language>en</language>
+    
+    <item>
+      <title>Type Safety</title>
+      <link>https://tagix-docs.vercel.app/docs/type-safety</link>
+      <description>Leverage TypeScript for compile-time correctness</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/type-safety</guid>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://tagix-docs.vercel.app/docs/testing</link>
+      <description>Strategies for testing Tagix applications</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/testing</guid>
+    </item>
+    
+    <item>
+      <title>State Machines</title>
+      <link>https://tagix-docs.vercel.app/docs/state-machines</link>
+      <description>Model state transitions as finite state machines</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/state-machines</guid>
+    </item>
+    
+    <item>
+      <title>State Definitions</title>
+      <link>https://tagix-docs.vercel.app/docs/state-definitions</link>
+      <description>Define your application state using tagged unions</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/state-definitions</guid>
+    </item>
+    
+    <item>
+      <title>Selectors</title>
+      <link>https://tagix-docs.vercel.app/docs/selectors</link>
+      <description>Extract and derive values from state</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/selectors</guid>
+    </item>
+    
+    <item>
+      <title>Installation &amp; Setup</title>
+      <link>https://tagix-docs.vercel.app/docs/installation</link>
+      <description>Learn how to install Tagix and configure your TypeScript project</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/installation</guid>
+    </item>
+    
+    <item>
+      <title>Middleware</title>
+      <link>https://tagix-docs.vercel.app/docs/middleware</link>
+      <description>Extend dispatch behavior with middleware</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/middleware</guid>
+    </item>
+    
+    <item>
+      <title>Quick Start</title>
+      <link>https://tagix-docs.vercel.app/docs/quick-start</link>
+      <description>Build your first Tagix application in under five minutes</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/quick-start</guid>
+    </item>
+    
+    <item>
+      <title>Context</title>
+      <link>https://tagix-docs.vercel.app/docs/context</link>
+      <description>Framework-agnostic store integration</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/context</guid>
+    </item>
+    
+    <item>
+      <title>Core Concepts</title>
+      <link>https://tagix-docs.vercel.app/docs/core-concepts</link>
+      <description>Understand the foundational concepts that power Tagix</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/core-concepts</guid>
+    </item>
+    
+    <item>
+      <title>Error Handling</title>
+      <link>https://tagix-docs.vercel.app/docs/error-handling</link>
+      <description>Handle errors in Tagix with structured state and actions</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/error-handling</guid>
+    </item>
+    
+    <item>
+      <title>Actions</title>
+      <link>https://tagix-docs.vercel.app/docs/actions</link>
+      <description>Synchronous action creators for state updates</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/actions</guid>
+    </item>
+    
+    <item>
+      <title>Architecture</title>
+      <link>https://tagix-docs.vercel.app/docs/architecture</link>
+      <description>Understand the internal design of Tagix</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/architecture</guid>
+    </item>
+    
+    <item>
+      <title>Async Actions</title>
+      <link>https://tagix-docs.vercel.app/docs/async-actions</link>
+      <description>Handle asynchronous operations with effects, success, and error handlers</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/async-actions</guid>
+    </item>
+    
+    <item>
+      <title>Terms of Service</title>
+      <link>https://tagix-docs.vercel.app/terms</link>
+      <description>Terms and conditions for using Tagix</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/terms</guid>
+    </item>
+
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://tagix-docs.vercel.app/privacy</link>
+      <description>Privacy policy and data handling practices</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/privacy</guid>
+    </item>
+
+    <item>
+      <title>Disclaimer</title>
+      <link>https://tagix-docs.vercel.app/disclaimer</link>
+      <description>Legal disclaimer and limitations of liability</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/disclaimer</guid>
+    </item>
+
+    <item>
+      <title>Contact</title>
+      <link>https://tagix-docs.vercel.app/contact</link>
+      <description>Get in touch with the Tagix team</description>
+      <pubDate>Fri, 06 Feb 2026 22:28:37 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/contact</guid>
+    </item>
+    
+  </channel>
+</rss>

@@ -30,6 +30,12 @@ export const Footer = () => (
                 GitHub
               </a>
             </li>
+            <li>
+              <a href="/rss.xml" target="_blank" rel="noopener" class={FOOTER_CLASSES.SOCIAL_LINK}>
+                <img src="/icons/rss.svg" alt="RSS Feed" class={FOOTER_CLASSES.SOCIAL_ICON} />
+                RSS Feed
+              </a>
+            </li>
           </ul>
         </div>
 

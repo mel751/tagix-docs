@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tagix-docs.vercel.app/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/type-safety</loc>
+    <lastmod>2026-02-06T22:28:37.169Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/testing</loc>
+    <lastmod>2026-02-06T22:28:37.168Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/state-machines</loc>
+    <lastmod>2026-02-06T22:28:37.167Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/state-definitions</loc>
+    <lastmod>2026-02-06T22:28:37.165Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/selectors</loc>
+    <lastmod>2026-02-06T22:28:37.164Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/installation</loc>
+    <lastmod>2026-02-06T22:28:37.163Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/middleware</loc>
+    <lastmod>2026-02-06T22:28:37.163Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/quick-start</loc>
+    <lastmod>2026-02-06T22:28:37.163Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/context</loc>
+    <lastmod>2026-02-06T22:28:37.162Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/core-concepts</loc>
+    <lastmod>2026-02-06T22:28:37.162Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/error-handling</loc>
+    <lastmod>2026-02-06T22:28:37.162Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/actions</loc>
+    <lastmod>2026-02-06T22:28:37.161Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/architecture</loc>
+    <lastmod>2026-02-06T22:28:37.161Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://tagix-docs.vercel.app/docs/async-actions</loc>
+    <lastmod>2026-02-06T22:28:37.161Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>

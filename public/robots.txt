@@ -1,0 +1,9 @@
+# robots.txt for https://tagix-docs.vercel.app/
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tagix-docs.vercel.app/sitemap.xml
+
+# RSS Feed
+# https://tagix-docs.vercel.app/rss.xml
