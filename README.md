@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./public/illustrations/tagix_logo.svg" alt="logo" width="200" height="100" />
+  <img src="./public/illustrations/tagix_logo.svg" alt="logo" />
 </p>
 
 <p align="center">

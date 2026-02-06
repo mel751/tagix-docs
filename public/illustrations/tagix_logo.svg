@@ -1,4 +1,4 @@
-<svg viewBox="0 0 350 100" xmlns="http://www.w3.org/2000/svg" fill="none">
+<svg width="320" height="110" viewBox="0 0 320 110" xmlns="http://www.w3.org/2000/svg" fill="none">
   <defs>
     <filter id="logo-wash" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="12" />
