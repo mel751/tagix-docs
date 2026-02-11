@@ -15,6 +15,19 @@ export default defineConfig({
       "@": resolve(__dirname, "./src"),
     },
   },
+  optimizeDeps: {
+    include: [
+      "prismjs",
+      "prismjs/components/prism-typescript",
+      "prismjs/components/prism-bash",
+      "prismjs/components/prism-javascript",
+      "prismjs/components/prism-jsx",
+      "prismjs/components/prism-json",
+      "prismjs/components/prism-tsx",
+      "prismjs/components/prism-markdown",
+      "tagix",
+    ],
+  },
   build: {
     sourcemap: false,
   },
