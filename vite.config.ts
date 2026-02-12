@@ -2,8 +2,24 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 import { effuse } from "@effuse/compiler/vite";
 import { resolve } from "path";
+import { execSync } from "child_process";
+import { version } from "./node_modules/tagix/package.json";
+
+const getReleaseDate = () => {
+  try {
+    return execSync(`npm view tagix@${version} time.modified`).toString().trim();
+  } catch (e) {
+    console.warn("Failed to fetch release date for tagix:", e);
+    return new Date().toISOString();
+  }
+};
+
+const releaseDate = getReleaseDate();
 
 export default defineConfig({
+  define: {
+    __TAGIX_RELEASE_DATE__: JSON.stringify(releaseDate),
+  },
   plugins: [
     effuse({
       debug: false,

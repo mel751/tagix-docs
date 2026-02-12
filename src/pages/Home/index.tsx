@@ -60,7 +60,13 @@ export const HomePage = define<{}, HomePageScriptReturn>({
             <div class="tagix-update-header">
               <span class="tagix-update-label">New</span>
               <p class="tagix-update-title">Tagix v{version}</p>
-              <p class="tagix-update-date">Feb 7, 2026</p>
+              <p class="tagix-update-date">
+                {new Date(__TAGIX_RELEASE_DATE__).toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric",
+                })}
+              </p>
             </div>
             <Link class="tagix-update-link" to="/releases">
               <span>Read more</span>
