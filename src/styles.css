@@ -799,10 +799,16 @@ a:hover {
 .tagix-input:focus,
 .tagix-input:focus-visible {
   outline: none !important;
-  box-shadow: none !important;
-  border-color: transparent !important;
-  --tw-ring-color: transparent !important;
-  --tw-ring-shadow: none !important;
+  box-shadow: 0 0 0 2px rgba(196, 93, 53, 0.1) !important;
+  border-color: var(--tagix-accent) !important;
+  caret-color: var(--tagix-accent);
+  font-weight: 600;
+}
+
+.tagix-input {
+  caret-color: var(--tagix-accent);
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .tsdoc-tag {
