@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "home": "Home",
+    "docs": "Docs",
+    "about": "About",
+    "releases": "Releases"
+  },
+  "sidebar": {
+    "gettingStarted": "Getting Started",
+    "installation": "Installation",
+    "quickStart": "Quick Start",
+    "coreConcepts": "Core Concepts",
+    "architecture": "Architecture",
+    "features": "Features",
+    "actions": "Actions",
+    "asyncActions": "Async Actions",
+    "selectors": "Selectors",
+    "middleware": "Middleware",
+    "context": "Context",
+    "errorHandling": "Error Handling",
+    "hooks": "Hooks",
+    "advanced": "Advanced",
+    "stateDefinitions": "State Definitions",
+    "stateMachines": "State Machines",
+    "typeSafety": "Type Safety",
+    "testing": "Testing"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "next": "Next",
+    "previous": "Previous"
+  }
+}
