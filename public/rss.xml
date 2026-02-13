@@ -13,6 +13,14 @@
       <pubDate>Sat, 07 Feb 2026 21:30:00 GMT</pubDate>
       <guid>https://tagix-docs.vercel.app/releases#v1.0.1</guid>
     </item>
+
+    <item>
+      <title>Hook Utilities</title>
+      <link>https://tagix-docs.vercel.app/docs/hooks</link>
+      <description>Type-safe utilities for accessing state and dispatching actions through TagixContext</description>
+      <pubDate>Fri, 13 Feb 2026 14:00:00 GMT</pubDate>
+      <guid>https://tagix-docs.vercel.app/docs/hooks</guid>
+    </item>
     
     <item>
       <title>Type Safety</title>
