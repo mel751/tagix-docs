@@ -1,28 +1,40 @@
-import { define, useHead } from "@effuse/core";
+import { define, useHead, effect, computed, type Signal } from "@effuse/core";
 import { Link } from "@effuse/router";
+import { i18nStore } from "../../store/appI18n";
 import { initPageAnimations } from "../../utils/animations";
 import "./styles.css";
 
-export const TermsPage = define({
-  script: () => {
-    useHead({
-      title: "Terms of Service - Tagix",
-      description: "Terms of service for using Tagix, the type-safe state management library.",
+interface ScriptReturn {
+  t: Signal<any>;
+}
+
+export const TermsPage = define<{}, ScriptReturn>({
+  script: ({ useStore }) => {
+    const store = useStore("i18n") as typeof i18nStore;
+    const tVal = computed(() => store.translations.value?.legal.terms);
+
+    effect(() => {
+      const termsT = tVal.value;
+      if (!termsT) return;
+      useHead({
+        title: termsT.head.title,
+        description: termsT.head.description,
+      });
     });
 
     setTimeout(() => initPageAnimations(), 100);
 
-    return {};
+    return { t: tVal };
   },
-  template: () => (
+  template: ({ t }) => (
     <div class="tagix-home">
       <main class="tagix-main">
         <section class="tagix-section">
           <div class="tagix-section-content tagix-section-narrow internal-nav-fix">
             <div class="tagix-hero-split">
               <div class="tagix-hero-text">
-                <h1 class="tagix-page-title">Terms of Service</h1>
-                <p class="tagix-page-date">Last updated: February 2026</p>
+                <h1 class="tagix-page-title">{() => t.value?.title}</h1>
+                <p class="tagix-page-date">{() => t.value?.updated}</p>
               </div>
               <img
                 src="/illustrations/terms.svg"

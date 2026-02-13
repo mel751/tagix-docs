@@ -1,27 +1,39 @@
-import { define, useHead } from "@effuse/core";
+import { define, useHead, effect, computed, type Signal } from "@effuse/core";
+import { i18nStore } from "../../store/appI18n";
 import { initPageAnimations } from "../../utils/animations";
 import "./styles.css";
 
-export const ContactPage = define({
-  script: () => {
-    useHead({
-      title: "Contact - Tagix",
-      description: "Contact information for Tagix, the type-safe state management library.",
+interface ScriptReturn {
+  t: Signal<any>;
+}
+
+export const ContactPage = define<{}, ScriptReturn>({
+  script: ({ useStore }) => {
+    const store = useStore("i18n") as typeof i18nStore;
+    const tVal = computed(() => store.translations.value?.legal.contact);
+
+    effect(() => {
+      const contactT = tVal.value;
+      if (!contactT) return;
+      useHead({
+        title: contactT.head.title,
+        description: contactT.head.description,
+      });
     });
 
     setTimeout(() => initPageAnimations(), 100);
 
-    return {};
+    return { t: tVal };
   },
-  template: () => (
+  template: ({ t }) => (
     <div class="tagix-home">
       <main class="tagix-main">
         <section class="tagix-section">
           <div class="tagix-section-content tagix-section-narrow internal-nav-fix">
             <div class="tagix-hero-split">
               <div class="tagix-hero-text">
-                <h1 class="tagix-page-title">Contact Us</h1>
-                <p class="tagix-page-date">Last updated: February 2026</p>
+                <h1 class="tagix-page-title">{() => t.value?.title}</h1>
+                <p class="tagix-page-date">{() => t.value?.updated}</p>
               </div>
               <img
                 src="/illustrations/contact.svg"
