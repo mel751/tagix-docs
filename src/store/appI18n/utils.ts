@@ -1,4 +1,4 @@
-import { taggedEnum } from "tagix";
+import { taggedEnum, tryCatchAsync, matchTag } from "tagix";
 import { I18nLoadError } from "./errors";
 import { LOCALES_PATH } from "./constants";
 
@@ -14,23 +14,26 @@ export const LoadResult = taggedEnum({
 export type LoadResultType = typeof LoadResult.State;
 
 export async function loadTranslations(locale: string): Promise<LoadResultType> {
-  try {
-    const response = await fetch(`${LOCALES_PATH}/${locale}.json`);
-    if (!response.ok) {
-      return LoadResult.Failure({
-        error: new I18nLoadError({
+  const result = await tryCatchAsync(
+    async () => {
+      const response = await fetch(`${LOCALES_PATH}/${locale}.json`);
+      if (!response.ok) {
+        throw new I18nLoadError({
           message: `HTTP error! status: ${response.status}`,
-        }) as unknown as I18nLoadErrorType,
-      });
-    }
-    const data = (await response.json()) as TranslationData;
-    return LoadResult.Success({ data });
-  } catch (error) {
-    return LoadResult.Failure({
-      error: new I18nLoadError({
+        });
+      }
+      return (await response.json()) as TranslationData;
+    },
+    (error) =>
+      new I18nLoadError({
         message: error instanceof Error ? error.message : "Unknown error",
         cause: error,
-      }) as unknown as I18nLoadErrorType,
-    });
+      }) as unknown as I18nLoadErrorType
+  );
+
+  if (result._tag === "Right") {
+    return LoadResult.Success({ data: result.right as TranslationData });
+  } else {
+    return LoadResult.Failure({ error: result.left as unknown as I18nLoadErrorType });
   }
 }
