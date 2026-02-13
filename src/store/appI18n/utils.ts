@@ -4,7 +4,7 @@ import { LOCALES_PATH } from "./constants";
 
 export type I18nLoadErrorType = InstanceType<typeof I18nLoadError>;
 
-export type TranslationData = Record<string, string>;
+export type TranslationData = any;
 
 export const LoadResult = taggedEnum({
   Success: { data: {} as TranslationData },

@@ -1,6 +1,6 @@
 import { createI18n } from "@effuse/i18n";
 import { createStore } from "tagix";
-import { signal } from "@effuse/core";
+import { signal, computed } from "@effuse/core";
 import { LOCALES, Locale, LOCALE_STORAGE_KEY } from "./constants";
 import { I18nState, I18nStateType } from "./state";
 import { i18nActions } from "./actions";
@@ -34,19 +34,10 @@ export const appI18nStore = createStore<I18nStateType>(
   { name: "appI18n" }
 );
 
-const localeSignal = signal<Locale>(getInitialLocale());
+const stateSignal = signal<I18nStateType>(appI18nStore.stateValue);
 
 appI18nStore.subscribe((state) => {
-  const currentLocale = I18nState.$match(state, {
-    Idle: (s) => s.locale,
-    Loading: (s) => s.locale,
-    Ready: (s) => s.locale,
-    Error: (s) => s.locale,
-  });
-
-  if (localeSignal.value !== currentLocale) {
-    localeSignal.value = currentLocale;
-  }
+  stateSignal.value = state;
 });
 
 appI18nStore.registerGroup(i18nActions);
@@ -95,29 +86,37 @@ export const switchLocale = async (locale: Locale) => {
   });
 };
 
+const localeComputed = computed(() => {
+  return I18nState.$match(stateSignal.value, {
+    Idle: (s) => s.locale,
+    Loading: (s) => s.locale,
+    Ready: (s) => s.locale,
+    Error: (s) => s.locale,
+  });
+});
+
+const translationsComputed = computed(() => {
+  return I18nState.$match(stateSignal.value, {
+    Idle: () => null,
+    Loading: () => null,
+    Ready: (s) => s.translations,
+    Error: () => null,
+  });
+});
+
+const isLoadingComputed = computed(() => {
+  return I18nState.$is("Loading")(stateSignal.value);
+});
+
 export const i18nStore = {
   get locale() {
-    return localeSignal;
+    return localeComputed;
   },
   get isLoading() {
-    return {
-      get value(): boolean {
-        return I18nState.$is("Loading")(appI18nStore.stateValue);
-      },
-    };
+    return isLoadingComputed;
   },
   get translations() {
-    return {
-      get value(): Record<string, string> | null {
-        const res = I18nState.$match(appI18nStore.stateValue, {
-          Idle: (_s: { locale: Locale }) => null,
-          Loading: (_s: { locale: Locale }) => null,
-          Ready: (s: { locale: Locale; translations: Record<string, string> }) => s.translations,
-          Error: (_s: { locale: Locale; message: string }) => null,
-        });
-        return res as Record<string, string> | null;
-      },
-    };
+    return translationsComputed;
   },
   setLocale: switchLocale,
   init: initI18n,
