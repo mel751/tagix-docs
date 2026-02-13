@@ -10,6 +10,7 @@ import {
   closeAboutDropdown,
 } from "../../store/aboutDropdown";
 import { AboutDropdown } from "../AboutDropdown/AboutDropdown";
+import { LanguageSelector } from "../LanguageSelector";
 
 export const Header = define({
   script: ({ useCallback }) => {
@@ -106,6 +107,7 @@ export const Header = define({
               </button>
               <AboutDropdown />
             </div>
+            <LanguageSelector />
           </nav>
 
           <button
@@ -157,6 +159,10 @@ export const Header = define({
         >
           GitHub
         </a>
+        <div class="tagix-mobile-menu-divider"></div>
+        <div class="tagix-mobile-lang-selector">
+          <LanguageSelector />
+        </div>
       </nav>
     </>
   ),
