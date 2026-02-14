@@ -1,5 +1,7 @@
 export const LOCALES = {
+  ZH: "zh",
   EN: "en",
+  JA: "ja",
   ES: "es",
 } as const;
 

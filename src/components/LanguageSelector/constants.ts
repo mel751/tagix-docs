@@ -3,6 +3,8 @@ import { LOCALES } from "../../store/appI18n/constants";
 export const LANGUAGE_LABELS = {
   [LOCALES.EN]: "English",
   [LOCALES.ES]: "Español",
+  [LOCALES.JA]: "日本語",
+  [LOCALES.ZH]: "简体中文",
 } as const;
 
 export const LANGUAGE_SELECTOR_CLASSES = {

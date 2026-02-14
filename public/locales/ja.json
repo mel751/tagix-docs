@@ -1,0 +1,253 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "docs": "ドキュメント",
+    "api": "API",
+    "about": "概要",
+    "releases": "リリース",
+    "github": "GitHub"
+  },
+  "sidebar": {
+    "gettingStarted": "はじめに",
+    "installation": "インストール",
+    "quickStart": "クイックスタート",
+    "coreConcepts": "コアコンセプト",
+    "architecture": "アーキテクチャ",
+    "features": "機能",
+    "actions": "アクション",
+    "asyncActions": "非同期アクション",
+    "selectors": "セレクタ",
+    "middleware": "ミドルウェア",
+    "context": "コンテキスト",
+    "errorHandling": "エラーハンドリング",
+    "hooks": "フック",
+    "advanced": "高度な設定",
+    "stateDefinitions": "状態定義",
+    "stateMachines": "ステートマシン",
+    "typeSafety": "型安全",
+    "testing": "テスト",
+    "stateManagement": "状態管理",
+    "uncategorized": "未分類"
+  },
+  "home": {
+    "head": {
+      "title": "Tagix - 型安全な状態管理",
+      "description": "Tagged Unions、推論アクション、網羅的なパターンマッチングによる厳密に型定義された状態管理。"
+    },
+    "hero": {
+      "tagline": "Tagged Unions、推論アクション、網羅的なパターンマッチングによる厳密に型定義された状態管理。",
+      "getStarted": "始める",
+      "viewOnGithub": "GitHubで表示"
+    },
+    "releases": {
+      "title": "リリース",
+      "new": "新規",
+      "readMore": "詳細を読む"
+    },
+    "features": {
+      "title": "設計による型安全",
+      "subtitle": "TypeScriptの制御フロー分析を活用した堅牢なアプリケーション状態の構築",
+      "taggedUnions": {
+        "title": "Tagged Unions",
+        "description": "数学的に網羅的な直和型として状態を定義します。不可能な状態はコンパイルエラーになります。"
+      },
+      "inferredActions": {
+        "title": "推論アクション",
+        "description": "自動型推論を使用してアクションを宣言します。コンパイラは実装から直接ペイロードとリデューサーの型を導き出します。"
+      },
+      "patternMatching": {
+        "title": "パターンマッチング",
+        "description": "すべての状態バリアントの処理を強制します。TypeScriptの制御フロー分析により、アプリケーションロジックが網羅的であることが保証されます。"
+      }
+    }
+  },
+  "api": {
+    "head": {
+      "title": "APIリファレンス | Tagix",
+      "description": "Tagixの完全なAPIリファレンス。型安全な状態管理のための関数、型、ユーティリティを探索します。"
+    },
+    "hero": {
+      "title": "APIリファレンス",
+      "tagline": "Tagixライブラリのアクション、型、インターフェースに関する完全な自動生成ドキュメント。",
+      "searchPlaceholder": "APIを検索..."
+    },
+    "notFound": "\"{query}\" に一致するAPI項目が見つかりませんでした",
+    "groups": {
+      "functions": "関数",
+      "types": "型",
+      "interfaces": "インターフェース",
+      "classes": "クラス"
+    }
+  },
+  "releases": {
+    "head": {
+      "title": "リリース - Tagix",
+      "description": "Tagixのリリー履歴と変更履歴。Tagged Unionsによる型安全な状態管理。"
+    },
+    "hero": {
+      "title": "リリース",
+      "tagline": "Tagixのリリー履歴と変更履歴。Tagged Unionsによる型安全な状態管理。"
+    }
+  },
+  "footer": {
+    "sections": {
+      "site": "サイト",
+      "social": "ソーシャル",
+      "legal": "法務"
+    },
+    "links": {
+      "rss": "RSSフィード",
+      "terms": "利用規約",
+      "privacy": "プライバシーポリシー",
+      "disclaimer": "免責事項",
+      "contact": "お問い合わせ"
+    },
+    "latestVersion": "最新バージョン: {version}",
+    "builtWith": "構築ツール",
+    "copyright": "© 2026 Tagix. MITライセンス。"
+  },
+  "legal": {
+    "terms": {
+      "title": "利用規約",
+      "updated": "最終更新日: 2026年2月",
+      "contactPageLink": "お問い合わせページ",
+      "head": {
+        "title": "利用規約 - Tagix",
+        "description": "型安全な状態管理ライブラリTagixの使用に関する利用規約。"
+      },
+      "sections": {
+        "acceptance": {
+          "title": "1. 規約への同意",
+          "content": "Tagixソフトウェアライブラリをインストール、アクセス、または使用することにより、利用規約に同意したものとみなされます。同意しない場合は、プロジェクトでの使用を控えてください。"
+        },
+        "license": {
+          "title": "2. ライセンス",
+          "content": "TagixはMITライセンスの下でリリースされています。ライセンスの条件に従い、ソフトウェアの使用、複製、変更、統合、公開、配布、サブライセンス、および/または販売を自由に行うことができます。"
+        },
+        "disclaimer": {
+          "title": "3. 保証の免責",
+          "content": "Tagixは「現状のまま」提供され、商品性、特定の目的への適合性、および非侵害の保証を含むがこれらに限定されない、明示的または黙示的な種類の保証も行いません。"
+        },
+        "liability": {
+          "title": "4. 責任の制限",
+          "content": "著者または著作権所有者は、契約上の行為、不法行為、またはその他に起因するかどうかにかかわらず、ソフトウェアまたはその使用に関連して発生した請求、損害、またはその他の責任について一切責任を負いません。"
+        },
+        "changes": {
+          "title": "5. 規約の変更",
+          "content": "当社はいつでもこれらの規約を変更する権利を留保します。変更後もTagixを引き続き使用することは、新しい規約への同意を構成します。"
+        },
+        "contact": {
+          "title": "6. お問い合わせ",
+          "content": "これらの規約に関する質問については、当社の {link} をご覧ください。"
+        }
+      }
+    },
+    "privacy": {
+      "title": "プライバシーポリシー",
+      "updated": "最終更新日: 2026年2月",
+      "contactPageLink": "お問い合わせページ",
+      "head": {
+        "title": "プライバシーポリシー - Tagix",
+        "description": "型安全な状態管理ライブラリTagixのプライバシーポリシー。"
+      },
+      "sections": {
+        "collect": {
+          "title": "1. 収集する情報",
+          "content": "Tagixはクライアント側のJavaScriptライブラリです。ライブラリの利用者から個人情報を収集、保存、または処理することはありません。"
+        },
+        "website": {
+          "title": "2. ドキュメントウェブサイト",
+          "content": "当社のドキュメントウェブサイトは静的サイトです。トラッキングクッキーや分析サービスは使用していません。"
+        },
+        "thirdParty": {
+          "title": "3. サードパーティサービス",
+          "content": "Tagixはnpm（Node Package Manager）を通じて配布されています。Tagixをインストールする際は、npmのプライバシーポリシーが適用されます。"
+        },
+        "openSource": {
+          "title": "4. オープンソース",
+          "content": "Tagixはオープンソースソフトウェアです。ソースコードはGitHubで公開されており、貢献はGitHubのプライバシーポリシーに従います。"
+        },
+        "changes": {
+          "title": "5. ポリシーの変更",
+          "content": "当社はこのプライバシーポリシーを随時更新することがあります。変更は、更新された改訂日とともにこのページに掲載されます。"
+        },
+        "contact": {
+          "title": "6. お問い合わせ",
+          "content": "プライバシーに関する質問については、当社の {link} をご覧ください。"
+        }
+      }
+    },
+    "disclaimer": {
+      "title": "免責事項",
+      "updated": "最終更新日: 2026年2月",
+      "contactPageLink": "お問い合わせページ",
+      "head": {
+        "title": "免責事項 - Tagix",
+        "description": "型安全な状態管理ライブラリTagixの免責事項。"
+      },
+      "sections": {
+        "general": {
+          "title": "一般的免責事項",
+          "content": "Tagixおよびそのドキュメントによって提供される情報は、一般的な情報提供のみを目的としています。情報の正確性を保つよう努めますが、ライブラリまたはドキュメントの完全性、正確性、信頼性について、いかなる保証も行いません。"
+        },
+        "advice": {
+          "title": "専門的アドバイスの拒否",
+          "content": "ドキュメントの内容は、ソフトウェア開発に関する技術的な参照および教育目的で提供されています。特定のユースケースに対する専門的なITコンサルティングやアーキテクチャのアドバイスを構成するものではありません。"
+        },
+        "links": {
+          "title": "外部リンク",
+          "content": "当社のドキュメントには外部リンクが含まれている場合があります。当社はそれらのサイトのコンテンツや利用可能性を管理しておらず、一切の責任を負いません。"
+        },
+        "risk": {
+          "title": "自己責任での使用",
+          "content": "Tagixの使用は自己責任で行ってください。ライブラリはいかなる保証もなしに提供されます。"
+        },
+        "liability": {
+          "title": "責任の制限",
+          "content": "法律で認められる最大限の範囲で、Tagixの使用に関連して発生した損失または損害に対する一切の責任を排除します。"
+        },
+        "contact": {
+          "title": "お問い合わせ",
+          "content": "この免責事項に関する質問については、当社の {link} をご覧ください。"
+        }
+      }
+    },
+    "contact": {
+      "title": "お問い合わせ",
+      "updated": "最終更新日: 2026年2月",
+      "head": {
+        "title": "お問い合わせ - Tagix",
+        "description": "型安全な状態管理ライブラリTagixのお問い合わせ情報。"
+      },
+      "intro": "皆様からのご連絡をお待ちしております。機能や価格、その他の質問があれば、お気軽にお問い合わせください。",
+      "sections": {
+        "getInTouch": {
+          "title": "連絡を取る",
+          "content": "お問い合わせについては、こちらに直接メールをお送りください。"
+        },
+        "github": {
+          "title": "GitHub",
+          "content": "TagixのGitHubリポジトリでバグ報告、機能リクエスト、または貢献を行ってください。"
+        }
+      }
+    }
+  },
+  "notFound": {
+    "head": {
+      "title": "ページが見つかりません | Tagix",
+      "description": "お探しのページは存在しません。"
+    },
+    "hero": {
+      "title": "ページが見つかりません",
+      "tagline": "お探しのページは存在しないか、移動した可能性があります。",
+      "returnHome": "ホームに戻る",
+      "viewDocs": "ドキュメントを表示"
+    }
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "next": "次へ",
+    "previous": "前へ"
+  }
+}

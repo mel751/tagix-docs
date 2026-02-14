@@ -1,0 +1,253 @@
+{
+  "nav": {
+    "home": "首页",
+    "docs": "文档",
+    "api": "API",
+    "about": "关于",
+    "releases": "发布",
+    "github": "GitHub"
+  },
+  "sidebar": {
+    "gettingStarted": "开始使用",
+    "installation": "安装",
+    "quickStart": "快速入门",
+    "coreConcepts": "核心概念",
+    "architecture": "架构",
+    "features": "特性",
+    "actions": "Action",
+    "asyncActions": "异步 Action",
+    "selectors": "Selector",
+    "middleware": "中间件",
+    "context": "上下文",
+    "errorHandling": "错误处理",
+    "hooks": "Hook",
+    "advanced": "高级进阶",
+    "stateDefinitions": "状态定义",
+    "stateMachines": "状态机",
+    "typeSafety": "类型安全",
+    "testing": "测试",
+    "stateManagement": "状态管理",
+    "uncategorized": "未分类"
+  },
+  "home": {
+    "head": {
+      "title": "Tagix - 类型安全的状态管理",
+      "description": "基于 Tagged Unions、推论 Action 和详尽模式匹配的严格类型化状态管理。"
+    },
+    "hero": {
+      "tagline": "基于 Tagged Unions、推论 Action 和详尽模式匹配的严格类型化状态管理。",
+      "getStarted": "开始使用",
+      "viewOnGithub": "在 GitHub 上查看"
+    },
+    "releases": {
+      "title": "发布",
+      "new": "新",
+      "readMore": "了解更多"
+    },
+    "features": {
+      "title": "与生俱来的类型安全",
+      "subtitle": "利用 TypeScript 的控制流分析构建健壮的应用状态",
+      "taggedUnions": {
+        "title": "Tagged Unions",
+        "description": "将状态定义为数学上详尽的可辨识联合类型。不可能的状态将导致编译时错误。"
+      },
+      "inferredActions": {
+        "title": "推论 Action",
+        "description": "声明具有自动类型推断的 Action。编译器直接从您的实现中推导出 payload 和 reducer 类型。"
+      },
+      "patternMatching": {
+        "title": "模式匹配",
+        "description": "强制处理所有状态变体。TypeScript 的控制流分析保证您的应用逻辑是详尽无遗的。"
+      }
+    }
+  },
+  "api": {
+    "head": {
+      "title": "API 参考 | Tagix",
+      "description": "Tagix 的完整 API 参考。探索用于类型安全状态管理的函数、类型和工具。"
+    },
+    "hero": {
+      "title": "API 参考",
+      "tagline": "Tagix 库 Action、类型和接口的完整生成文档。",
+      "searchPlaceholder": "搜索 API..."
+    },
+    "notFound": "未找到匹配 \"{query}\" 的 API 项目",
+    "groups": {
+      "functions": "函数",
+      "types": "类型",
+      "interfaces": "接口",
+      "classes": "类"
+    }
+  },
+  "releases": {
+    "head": {
+      "title": "发布 - Tagix",
+      "description": "Tagix 发布历史和变更日志。基于 Tagged Unions 的类型安全状态管理。"
+    },
+    "hero": {
+      "title": "发布",
+      "tagline": "Tagix 发布历史和变更日志。基于 Tagged Unions 的类型安全状态管理。"
+    }
+  },
+  "footer": {
+    "sections": {
+      "site": "站点",
+      "social": "社交",
+      "legal": "法律"
+    },
+    "links": {
+      "rss": "RSS 订阅",
+      "terms": "使用条款",
+      "privacy": "隐私政策",
+      "disclaimer": "免责声明",
+      "contact": "联系我们"
+    },
+    "latestVersion": "最新版本: {version}",
+    "builtWith": "构建工具",
+    "copyright": "© 2026 Tagix. MIT 许可证。"
+  },
+  "legal": {
+    "terms": {
+      "title": "使用条款",
+      "updated": "最近更新：2026年2月",
+      "contactPageLink": "联系页面",
+      "head": {
+        "title": "使用条款 - Tagix",
+        "description": "使用类型安全状态管理库 Tagix 的服务条款。"
+      },
+      "sections": {
+        "acceptance": {
+          "title": "1. 接受条款",
+          "content": "通过安装、访问或使用 Tagix 软件库，即表示您同意受这些使用条款的约束。如果您不同意这些条款，请勿在您的项目中使用该库。"
+        },
+        "license": {
+          "title": "2. 许可证",
+          "content": "Tagix 根据 MIT 许可证发布。您可以自由使用、复制、修改、合并、发布、分发、分许可和/或销售软件副本，但需遵守 MIT 许可证的条件。"
+        },
+        "disclaimer": {
+          "title": "3. 免责声明",
+          "content": "Tagix 按“原样”提供，不提供任何形式的明示或暗示保证，包括但不限于适销性、特定用途的适用性和非侵权性。"
+        },
+        "liability": {
+          "title": "4. 责任限制",
+          "content": "在任何情况下，对于因软件或软件的使用或其他交易而引起的任何索赔、损害或其他责任，作者或版权所有者均不承担任何责任。"
+        },
+        "changes": {
+          "title": "5. 条款变更",
+          "content": "我们保留随时修改这些条款的权利。在任何变更后继续使用 Tagix 即表示接受新条款。"
+        },
+        "contact": {
+          "title": "6. 联系方式",
+          "content": "有关这些条款的问题，请访问我们的 {link}。"
+        }
+      }
+    },
+    "privacy": {
+      "title": "隐私政策",
+      "updated": "最近更新：2026年2月",
+      "contactPageLink": "联系页面",
+      "head": {
+        "title": "隐私政策 - Tagix",
+        "description": "类型安全状态管理库 Tagix 的隐私政策。"
+      },
+      "sections": {
+        "collect": {
+          "title": "1. 我们收集的信息",
+          "content": "Tagix 是一个客户端 JavaScript 库。我们不会从库的用户那里收集、存储或处理任何个人信息。"
+        },
+        "website": {
+          "title": "2. 文档网站",
+          "content": "我们的文档网站是一个静态站点。我们不使用任何跟踪 Cookie 或分析服务。"
+        },
+        "thirdParty": {
+          "title": "3. 第三方服务",
+          "content": "Tagix 通过 npm (Node Package Manager) 分发。当您安装 Tagix 时，npm 的隐私政策适用于该交互。"
+        },
+        "openSource": {
+          "title": "4. 开源",
+          "content": "Tagix 是开源软件。源代码在 GitHub 上公开可用，贡献受 GitHub 隐私政策的约束。"
+        },
+        "changes": {
+          "title": "5. 政策变更",
+          "content": "我们可能会不时更新此隐私政策。任何变更都将发布在此页面上，并注有更新日期。"
+        },
+        "contact": {
+          "title": "6. 联系方式",
+          "content": "有关隐私的问题，请访问我们的 {link}。"
+        }
+      }
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "updated": "最近更新：2026年2月",
+      "contactPageLink": "联系页面",
+      "head": {
+        "title": "免责声明 - Tagix",
+        "description": "类型安全状态管理库 Tagix 的免责声明。"
+      },
+      "sections": {
+        "general": {
+          "title": "一般免责声明",
+          "content": "Tagix 及其文档提供的信息仅供一般参考。虽然我们努力保持信息最新且准确，但我们不对库或文档的完整性、准确性、可靠性、适用性或可用性做任何形式的明示或暗示陈述或保证。"
+        },
+        "advice": {
+          "title": "无专业建议",
+          "content": "我们文档中的内容仅供软件开发相关的技术参考和教育目的。它不构成针对您特定用例的专业 IT 咨询或架构建议。"
+        },
+        "links": {
+          "title": "外部链接",
+          "content": "我们的文档可能包含指向外部网站的链接。我们无法控制这些网站的内容和可用性，也不对其内容或做法负责。"
+        },
+        "risk": {
+          "title": "风险自担",
+          "content": "您使用 Tagix 的风险由您自行承担。该库在不提供任何保证或担保的情况下提供。"
+        },
+        "liability": {
+          "title": "责任限制",
+          "content": "在法律允许的最大范围内，我们不承担因您使用 Tagix 而引起的任何损失或损害。"
+        },
+        "contact": {
+          "title": "联系方式",
+          "content": "有关此免责声明的问题，请访问我们的 {link}。"
+        }
+      }
+    },
+    "contact": {
+      "title": "联系我们",
+      "updated": "最近更新：2026年2月",
+      "head": {
+        "title": "联系方式 - Tagix",
+        "description": "类型安全状态管理库 Tagix 的联系信息。"
+      },
+      "intro": "我们很乐意听到您的声音。无论您是对特性、定价还是其他任何事情有疑问，我们的团队都准备好回答您的所有问题。",
+      "sections": {
+        "getInTouch": {
+          "title": "取得联系",
+          "content": "如有任何疑问，请直接发送电子邮件给我们："
+        },
+        "github": {
+          "title": "GitHub",
+          "content": "在我们的 GitHub 仓库中报告 Bug、请求特性或为 Tagix 做出贡献："
+        }
+      }
+    }
+  },
+  "notFound": {
+    "head": {
+      "title": "页面未找到 | Tagix",
+      "description": "您查找的页面不存在。"
+    },
+    "hero": {
+      "title": "页面未找到",
+      "tagline": "您查找的页面不存在或已被移动。",
+      "returnHome": "返回首页",
+      "viewDocs": "查看文档"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "next": "下一页",
+    "previous": "上一页"
+  }
+}
